@@ -35,6 +35,10 @@ way[highway=tertiary],way[highway=unclassified]     { z-index: 6; color: #eeeec9
 way[highway=residential]                            { z-index: 5; color: white; width: 5; casing-color: #999; casing-width: 1; }
 way[highway=service]                                { color: white; width: 3; casing-color: #999; casing-width: 1; }
 
+way[highway][cycleway],
+way[highway][cycleway:left],
+way[highway][cycleway:right] {casing-color: blue; casing-width: 2}
+
 /* Pedestrian precincts need to be treated carefully. Only closed-loops with an explicit
 area=yes tag should be filled. The below doesn't yet work as intended. */
 way[highway=pedestrian] !:area { color: #ddddee; width: 5; casing-color: #555555; casing-width: 1; }
